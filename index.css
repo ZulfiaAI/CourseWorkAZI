@@ -1,0 +1,27 @@
+body {
+    font-family: "Inter","Roboto"; 
+    font-weight: normal;
+    font-style: normal;
+    width: 100%;
+    min-width:960px;
+}
+.Initial_Image { 
+    position: relative;
+}
+.Initial_Image img {
+   Width: 1380px;
+   height: 872px;
+   filter: brightness(55%);
+   border-radius: 40px;
+}
+.Text_overlay {
+   position: absolute;
+   bottom: 280px;
+   left: 40px;
+   padding: 10px;
+   border-radius: 10px;
+   color: #ffffff;
+   font-size: 120px;
+   max-width: 50%;
+   font-weight: 500;
+}

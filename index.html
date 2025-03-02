@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
   <section>
     <header>
-      <img src="Materials\LOGO_header.svg" alt="лого_WorldResearch">
       <nav>
+        <img src="Materials\LOGO_header.svg" alt="лого_WorldResearch">
         <p><time datetime="T13:00">13:00</time></p> 
         <button>Войти</button>
         <button>Поддержка</button>
@@ -15,9 +19,11 @@
     </header>
   </section>
   <section>
-      <div class="background_image">
-        <img src="Materials\Earth_PNG.png" alt="Планета Земля">
-        <h1>Узнайте больше о мире вместе с нами</h1>
+      <div class="Initial_Image">
+        <img src="Materials\Earth_PNG.png" alt="Начальное изображение-планета Земля">
+        <div class="Text_overlay">
+          <p>Узнайте больше о мире вместе с нами</p>
+        </div>
       </div>
   </section >
   <section>
@@ -150,8 +156,12 @@
   </section>
   <section>
       <h2>Подпишитесь на обновления и будьте в курсе всех предложений</h2> 
-      <p>Email</p> 
+      <label>
+      <img src="Materials\Letter.svg">
+      Email
       <input type = "email"/>
+      <img src="Materials\Arrow_Right.svg">
+      </label> 
       <p>Подписываясь на рассылку, вы соглашаетесь с Условиями и положениями и Политикой конфиденциальности</p>
   </section>
   <section>
