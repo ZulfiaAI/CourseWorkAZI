@@ -1,0 +1,665 @@
+@media (max-width: 768px) and (min-width:480px) and (orientation: portrait) {
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-family: "Inter"; 
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 0;
+  }
+
+  .container {
+    max-width: 708px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 120px;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+
+  h2 {
+    width: 708px;
+    height: auto;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 70px;
+    letter-spacing: -2px;
+    color: #000000;
+    margin-top: 0;
+    margin-bottom: 40px;
+    font-family: Inter;
+
+  }
+
+  h3 {
+    width: 708px;
+    height: auto;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: -1.6px;
+    color: #000000;
+  }
+
+  /*Header*/
+  .header__container {
+    max-width: 708px;
+    height: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+  }
+  
+  header {
+    background-color: #ffffff;
+    position: sticky; z-index: 1;
+    top: 0px;
+    height: 72px;
+  } 
+  
+  .header__nav-list {
+    display: flex;
+    vertical-align: middle;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.4px;
+  }
+  
+  .header__nav-link {
+    color: #000000;
+    text-decoration: none
+  }
+  
+  .header__nav-item:not(:last-child) {
+    margin-right: 24px;
+  }
+  
+  .header__logo {
+    margin-left: 276px;
+    margin-right: 124px; 
+  }
+  
+  time {
+    width: 35px;
+    height: 22px;
+    left: 30px;
+    top: 25px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.4px;
+  }
+
+  /*Главная*/
+  .banner__container {
+    display: flex;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 232px;
+    max-width: 708px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 64px;
+    background-image: url("Materials/Earth_pad_PNG.png");
+    border-radius: 40px;
+    background-size: cover;
+  }
+
+  .banner__heading {
+    font-weight: 500;
+    font-size: 120px;
+    line-height: 120px;
+    letter-spacing: -4px;
+    color: #ffffff;
+    max-width: 75%;
+    margin: 0;
+  }
+
+  /*О нас*/
+  .about-us__container {
+    max-width: 708px;
+    height: 770px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 120px;
+    background-color: #F3F3F3;
+    border-radius: 40px;
+    padding: 40px;
+  }
+  
+  .about-us__profile {
+    display: flex;
+    width: 628px;
+    height: 70px;
+    align-items: center;
+  }
+
+  .foto-profile {
+    width: 70px;
+    height: 70px;
+    margin-right: 16px;
+  }
+  
+  .profile-info {
+    height: 64px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: -1px;
+  }
+
+  .profile-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: -0.8px;
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  .profile-quote {
+    width: 628px;
+    height: 360px;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: -1.6px;
+    margin-top: 140px;
+    margin-right: 0px;
+    margin-bottom: 0;
+    max-width: 96%;
+  }   
+
+    /*Континенты*/
+  .continents-cards {
+    overflow: hidden;
+    overflow: scroll;
+  }
+  .continents-cards__list {
+    display: inline-flex;
+    max-height: 680px;
+  }
+  
+  .continents-cards__preview {
+    display: flex;
+  }
+  
+  .continents-cards__preview:not(:last-child) {
+    margin-right: 24px;
+  }
+  
+  .continent-card__north-america {
+    background-size: cover;
+    background-image: url("Materials/NorthAmerica_PNG.png"); 
+    width: 912px;
+    height:680px;
+    border-radius: 40px;
+  }
+  
+  .continent-card__south-america {
+    background-size: cover;
+    background-image: url("Materials/SouthAmerica_PNG.png");
+    width: 912px;
+    height:680px;
+    border-radius: 40px;
+  }
+  
+  .continent-card__caribbean {
+    background-size: cover;
+    background-image: url("Materials/Caribbean_PNG.png");
+    width: 912px;
+    height:680px;
+    border-radius: 40px;
+  }
+  
+  .continent-card__africa {
+    background-size: cover;
+    background-image: url("Materials/Africa_PNG.png");
+    width: 912px;
+    height:680px;
+    border-radius: 40px;
+  }
+  
+  .continent-card__europe {
+    background-size: cover;
+    background-image: url("Materials/Europe_PNG.png");
+    width: 912px;
+    height:680px;
+    border-radius: 40px;
+  }
+  
+  .continent-card__asia {
+    background-size: cover;
+    background-image: url("Materials/Asia_PNG.png");
+    width: 912px;
+    height:680px;
+    border-radius: 40px;
+  }
+  
+  .continent-card__australia {
+    background-size: cover;
+    background-image: url("Materials/Australia_PNG.png");
+    width: 912px;
+    height:680px;
+    border-radius: 40px;
+  }
+  
+  .continent-card__name {
+    width: 832px;
+    height: 70px;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 70px;
+    letter-spacing: -2px;
+    color: #FFFFFF;
+    margin-top: 494px;
+    margin-bottom: 16px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  
+  .continent-card__description {
+    width: 832px;
+    height: 60px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    display: flex;
+    letter-spacing: -0.8px;
+    align-items: center;
+    margin-top: 0;
+    color: #FFFFFF;
+    margin-left: 40px;
+    margin-bottom: 40px;
+    margin-right: 40px;
+    max-width: 80%;
+  }
+
+  /*Таблица стран*/
+  
+  .table {
+    background-color: #F3F3F3;
+    border-radius: 20px;
+    height: 546px;
+    width: 708px;
+    margin:0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: -0.8px;
+    text-align: left;
+    border-spacing: 0;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  
+  .table-thead {
+    width: 708px;
+    height: 78px;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: -0.8px;
+    color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .table-line{
+    height: 78px;
+    width: 708px;
+  }
+
+  /*Новости*/
+
+  .news__cards {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  .news__cards-preview:not(:last-child) {
+    margin-bottom: 24px;
+  }
+
+  .news__cards-preview {
+    background-color: #F3F3F3;
+    border-radius: 40px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 120px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 152px;
+  }
+  
+  .news__cards-preview-header {
+    margin-top: 32px;
+    margin-bottom: 24px;
+    text-align: center;
+  }
+  
+  .news__cards-preview-description {
+    width: 588px;
+    height: 92px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: -0.8px;
+    margin-top: 0px;
+    margin-bottom: 16px;
+    color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+  }
+  
+  .news__cards-preview-link {
+    width: 120px;
+    height: 30px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: -0.8px;
+    color: #4A5CFF;
+    margin: 0;
+    text-decoration: none;
+  }
+
+  .news__icon {
+    width: 80px;
+    height: 80px;
+  }
+
+/*Подписка*/ /*Оглавление*/
+
+  .subscription__description {
+    display: flex;
+    flex-direction: column;
+    height: 224px;
+    margin-bottom: 32px;
+  }
+  
+  .subscription__description-heading1 {
+    height: 140px;
+    width: 678px;
+    margin-bottom: 24px;
+  }
+
+  .subscription__description-heading2 {
+    width: 450px;
+    height: 60px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: -1px;
+    color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .subscription__btn-time-frame {
+    display: flex;
+    width: 284px;
+    height: 60px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px; 
+    background-color: transparent;  
+  }
+  
+  .subscription__btn-time-frame button {
+    width: 132px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+  }
+  
+  .button-subscription button:disabled {
+    border-bottom: 2px;
+    border-color: #000000;
+  }
+
+/*Подписка*/ 
+
+  .subscription__cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .subscription__cards-version{
+    display: flex;
+    margin-top: 32px;
+    grid-gap: 24px;
+    padding-top: 33px;
+    border-top: 1px solid #C0C0C0;
+  }
+  
+  .subscription__cards-version-header {
+    width: 288px;
+    height: 40px;
+    margin: 0;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: -1.6px;
+
+  }
+  
+  .subscription__cards-description {
+    width: 288px;
+    list-style: inside;
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: -0.6px;
+
+  }
+  
+  .subscription__cards-description ::marker{
+    color: #000000;
+  }
+  
+  .subscription__cards-description li {
+    margin-bottom: 10px;
+  }
+  
+  .prise {
+    width: 288px;
+    height: 30px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: -1px;
+    font-family: Inter;
+  }
+  
+  .subscribe-btn {
+    width: 288px;
+    height: 54px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: -0.8px;
+    color: #FFFFFF;
+    justify-content: center;
+    align-items: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 65px;
+    padding-right: 65px;
+    background-color: #000000;
+    border-radius: 10px;
+  }
+  
+  /*Почта*/
+
+  .email-subscription__heading {
+    width: 708px;
+    height: 280px;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 70px;
+    letter-spacing: -2px;
+    color: #FFFFFF;
+    margin-bottom: 0;
+  }
+  
+  .email-subscription__container {
+    display: flex;
+    flex-direction: column;
+    max-width: 768px;
+    height: 554px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 40px;
+    background-color: #000000;
+    padding-top: 60px;
+    padding-left: 30px;
+    padding-bottom: 60px;
+    padding-right: 30px;
+  }
+  
+  .email-subscription__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 708px;
+    height: 130px;
+    justify-content: center;
+    padding-top: 24px;
+  }
+  
+  .email-subscription__description {
+    width: 520px;
+    height: 60px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.4px;
+    color: #7D7D7D;
+    margin-top: 20px;
+  }
+  
+  .email-subscription__description a {
+    width: 708px;
+    height: 40px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.4px;
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+  
+  .email-subscription__wrapper-window {
+    display: flex;
+    color: #FFFFFF;
+    width: 708px;
+    padding-bottom: 20px;
+    vertical-align: middle;
+    align-items: center;
+    grid-gap: 10px;
+    border-bottom: 1px solid #FFFFFF;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: -0.8px;
+  }
+  
+  .email-subscription__wrapper-input{
+    width:600px;
+    background-color: #000000;
+    border: 0;
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: -0.8px;
+  }
+  
+  .button-submit {
+    background-color: #000000;
+    padding: 0;
+    border: 0; 
+  }
+  
+  .email-subscription__wrapper-input::placeholder {
+    color: #000000;
+  }
+
+  /*Ответы на вопросы*/
+
+  .answers .container {
+    margin-bottom: 40px;
+  }
+
+  .answers_list {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .answers_list-questions {
+    display: flex;
+    height: auto;
+    vertical-align: middle;
+    align-items: center;
+    border-bottom: 1px solid #C0C0C0;
+  }
+  
+  .answers_list-questions:first-child{
+    border-top: 1px solid #C0C0C0;
+  }
+  
+  .question {
+    width: 600px;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: -1,6px;
+  }
+  
+  .response-btn {
+    margin-left: 70px;
+    border: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+  }
+
+  /*footer*/
+
+  .footer__conteiner {
+    display: flex;
+    max-width: 768px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #000000;
+    height: 130px;
+    vertical-align: middle;
+    align-items: center;
+    padding: 30px;
+  }
+  
+  .footer__nav-list {
+    display: none;
+  }
+  
+  .footer_logo {
+    margin: auto;
+  }
+}

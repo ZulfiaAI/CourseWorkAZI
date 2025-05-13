@@ -1,3 +1,4 @@
+@media (min-width: 1040px) {
 * {
   box-sizing: border-box;
 }
@@ -143,7 +144,7 @@ time {
   display: flex;
   width: 1300px;
   height: 70px;
-
+  align-items: center;
 }
 .foto-profile {
   width: 70px;
@@ -159,6 +160,7 @@ time {
   letter-spacing: -1px;
 
 }
+
 .profile-title {
   color: rgba(0, 0, 0, 0.5);
 }
@@ -188,6 +190,9 @@ time {
 
 .continents-cards__preview {
   display: flex;
+}
+
+.continents-cards__preview:not(:last-child) {
   margin-right: 24px;
 }
 
@@ -362,7 +367,7 @@ time {
 }
 
 .news__cards-preview-link {
-  width: 105px;
+  width: 120px;
   height: 30px;
   font-weight: 500;
   font-size: 20px;
@@ -370,6 +375,7 @@ time {
   letter-spacing: -0.8px;
   color: #4A5CFF;
   margin: 0;
+  text-decoration: none;
 }
 
 /*Подписка*/ /*Оглавление*/
@@ -467,8 +473,6 @@ time {
 }
 
 .subscribe-btn {
-  width: 123px;
-  height: 30px;
   font-weight: 500;
   font-size: 20px;
   line-height: 30px;
@@ -546,7 +550,7 @@ time {
   text-decoration: none;
 }
 
-.email-subscription__wrapper-label {
+.email-subscription__wrapper-window {
   display: flex;
   color: #FFFFFF;
   width: 493px;
@@ -572,6 +576,12 @@ time {
   font-size: 20px;
   line-height: 30px;
   letter-spacing: -0.8px;
+}
+
+.button-submit {
+  background-color: #000000;
+  padding: 0;
+  border: 0; 
 }
 
 /*Ответы на вопросы*/
@@ -642,4 +652,7 @@ time {
 .footer__nav-link {
   text-decoration: none;
   color: #7D7D7D;
+}
+
+
 }
