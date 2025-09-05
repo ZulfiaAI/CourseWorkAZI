@@ -1,27 +1,658 @@
-body {
-    font-family: "Inter","Roboto"; 
-    font-weight: normal;
-    font-style: normal;
-    width: 100%;
-    min-width:960px;
+@media (min-width: 1040px) {
+* {
+  box-sizing: border-box;
 }
-.Initial_Image { 
-    position: relative;
+
+html {
+  font-family: "Inter"; 
+  font-weight: normal;
+  font-style: normal;
 }
-.Initial_Image img {
-   Width: 1380px;
-   height: 872px;
-   filter: brightness(55%);
-   border-radius: 40px;
+
+::-webkit-scrollbar {
+  width: 0;
 }
-.Text_overlay {
-   position: absolute;
-   bottom: 280px;
-   left: 40px;
-   padding: 10px;
-   border-radius: 10px;
-   color: #ffffff;
-   font-size: 120px;
-   max-width: 50%;
-   font-weight: 500;
+
+.container {
+  max-width: 1380px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 120px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+h2 {
+  width: 1380px;
+  height: 70px;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 70px;
+  letter-spacing: -2px;
+  color: #000000;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+h3 {
+  width: 558px;
+  height: 60px;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 60px;
+  letter-spacing: -1.6px;
+  color: #000000;
+}
+
+/*Header*/
+.header__container {
+  max-width: 1380px;
+  height: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+header {
+  background-color: #ffffff;
+  position: sticky; z-index: 1;
+  top: 0px;
+  height: 72px;
+} 
+
+.header__nav-list {
+  display: flex;
+  vertical-align: middle;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.4px;
+}
+
+.header__nav-link {
+  color: #000000;
+  text-decoration: none
+}
+
+.header__nav-item:not(:last-child) {
+  margin-right: 24px;
+}
+
+.header__logo {
+  margin-left: 612px;
+  margin-right: 466px; 
+}
+
+time {
+  width: 35px;
+  height: 22px;
+  left: 30px;
+  top: 25px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.4px;
+}
+
+/*Главная*/
+.banner__container {
+  display: flex;
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: 356px;
+  padding-bottom: 472px;
+  max-width: 1380px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 120px;
+  background-image: url("Materials/Earth_PNG.png");
+  border-radius: 40px;
+  background-size: cover;
+}
+
+.banner__heading {
+  font-weight: 500;
+  font-size: 120px;
+  line-height: 120px;
+  letter-spacing: -4px;
+  color: #ffffff;
+  max-width: 86.5%;
+  margin: 0;
+}
+
+/*О нас*/
+.about-us__container {
+  max-width: 1380px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 120px;
+  background-color: #F3F3F3;
+  border-radius: 40px;
+  padding: 40px;
+}
+
+.about-us__profile {
+  display: flex;
+  width: 1300px;
+  height: 70px;
+  align-items: center;
+}
+.foto-profile {
+  width: 70px;
+  height: 70px;
+  margin-right: 16px;
+}
+
+.profile-info {
+  height: 70px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: -1px;
+
+}
+
+.profile-title {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.profile-quote {
+  width: 1300px;
+  height: 240px;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 60px;
+  letter-spacing: -1.6px;
+  margin-top: 140px;
+  margin-right: 40px;
+  margin-bottom: 0;
+  max-width: 86.5%;
+}
+
+/*Континенты*/
+.continents-cards {
+  overflow: hidden;
+  overflow: scroll;
+}
+.continents-cards__list {
+  display: inline-flex;
+  max-height: 680px;
+}
+
+.continents-cards__preview {
+  display: flex;
+}
+
+.continents-cards__preview:not(:last-child) {
+  margin-right: 24px;
+}
+
+.continent-card__north-america {
+  background-size: cover;
+  background-image: url("Materials/NorthAmerica_PNG.png"); 
+  width: 912px;
+  height:680px;
+  border-radius: 40px;
+}
+
+.continent-card__south-america {
+  background-size: cover;
+  background-image: url("Materials/SouthAmerica_PNG.png");
+  width: 912px;
+  height:680px;
+  border-radius: 40px;
+}
+
+.continent-card__caribbean {
+  background-size: cover;
+  background-image: url("Materials/Caribbean_PNG.png");
+  width: 912px;
+  height:680px;
+  border-radius: 40px;
+}
+
+.continent-card__africa {
+  background-size: cover;
+  background-image: url("Materials/Africa_PNG.png");
+  width: 912px;
+  height:680px;
+  border-radius: 40px;
+}
+
+.continent-card__europe {
+  background-size: cover;
+  background-image: url("Materials/Europe_PNG.png");
+  width: 912px;
+  height:680px;
+  border-radius: 40px;
+}
+
+.continent-card__asia {
+  background-size: cover;
+  background-image: url("Materials/Asia_PNG.png");
+  width: 912px;
+  height:680px;
+  border-radius: 40px;
+}
+
+.continent-card__australia {
+  background-size: cover;
+  background-image: url("Materials/Australia_PNG.png");
+  width: 912px;
+  height:680px;
+  border-radius: 40px;
+}
+
+.continent-card__name {
+  width: 832px;
+  height: 70px;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 70px;
+  letter-spacing: -2px;
+  color: #FFFFFF;
+  margin-top: 494px;
+  margin-bottom: 16px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.continent-card__description {
+  width: 832px;
+  height: 60px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  display: flex;
+  letter-spacing: -0.8px;
+  align-items: center;
+  margin-top: 0;
+  color: #FFFFFF;
+  margin-left: 40px;
+  margin-bottom: 40px;
+  margin-right: 40px;
+}
+
+/*Таблица стран*/
+
+.table-continents__table-box {
+  background-color: #F3F3F3;
+  border-radius: 40px;
+  height: 700px;
+  display: flex;
+  padding-top: 77px;
+  padding-left: 234px;
+  padding-right: 234px;
+  padding-bottom: 77px;
+}
+
+.table {
+  background-color: #FFFFFF;
+  border-radius: 40px;
+  height: 546px;
+  width: 912px;
+  margin:0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: -0.8px;
+  text-align: left;
+  border-spacing: 0;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.table-thead {
+  width: 239px;
+  height: 30px;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: -0.8px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.table-line{
+  height: 78px;
+  width: 808px;
+}
+
+/*Новости*/
+.news__cards {
+  display: flex;
+  max-height: 680px;
+}
+
+.news__cards-preview:not(:last-child) {
+  margin-right: 24px;
+}
+
+.news__cards-preview {
+  background-color: #F3F3F3;
+  border-radius: 40px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding-top: 120px;
+  padding-bottom: 152px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.news__cards-preview-header {
+  margin-top: 32px;
+  margin-bottom: 24px;
+}
+
+.news__cards-preview-description {
+  width: 558px;
+  height: 92px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: -0.8px;
+  margin-top: 0px;
+  margin-bottom: 24px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.news__cards-preview-link {
+  width: 120px;
+  height: 30px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: -0.8px;
+  color: #4A5CFF;
+  margin: 0;
+  text-decoration: none;
+}
+
+/*Подписка*/ /*Оглавление*/
+
+.subscription__description {
+  display: flex;
+  height: 140px;
+  margin-bottom: 64px;
+}
+
+.subscription__description-heading1 {
+  height: 140px;
+  width: 678px;
+  margin-right: 24px;
+  margin-bottom: 0;
+}
+
+.subscription__description-heading2 {
+  width: 493px;
+  height: 60px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: -1px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.subscription__btn-time-frame {
+  display: flex;
+  width: 284px;
+  height: 60px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px; 
+  background-color: transparent;  
+}
+
+.subscription__btn-time-frame button {
+  width: 132px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.button-subscription button:disabled {
+	border-bottom: 2px;
+	border-color: #000000;
+}
+
+/*Подписка*/ 
+
+.subscription__cards {
+  display: flex;
+  flex-direction: column;
+}
+
+.subscription__cards-version {
+  display: flex;
+  margin-top: 64px;
+  grid-gap: 24px;
+  padding-top: 33px;
+  border-top: 1px solid #C0C0C0;
+}
+
+.subscription__cards-version-header {
+  width: 327px;
+  height: 60px;
+  margin: 0;
+}
+
+.subscription__cards-description {
+  width: 327px;
+  list-style: inside;
+  padding-right: 30px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.subscription__cards-description ::marker{
+  color: #000000;
+}
+
+.subscription__cards-description li {
+  margin-bottom: 10px;
+}
+
+.prise {
+  width: 327px;
+  height: 40px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 40px;
+  letter-spacing: -1.6px;
+}
+
+.subscribe-btn {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: -0.8px;
+  color: #FFFFFF;
+  justify-content: center;
+  align-items: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 65px;
+  padding-right: 65px;
+  width: 253px;
+  height: 54px;
+  background-color: #000000;
+  border-radius: 10px;
+}
+
+/*Почта*/
+
+.email-subscription__heading {
+  width: 795px;
+  height: 210px;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 70px;
+  letter-spacing: -2px;
+  color: #FFFFFF;
+  margin-right: 24px;
+  margin-bottom: 0;
+}
+
+.email-subscription__container {
+  display: flex;
+  max-width: 1440px;
+  height: 330px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 120px;
+  background-color: #000000;
+  padding-top: 60px;
+  padding-left: 30px;
+  padding-bottom: 60px;
+  padding-right: 30px;
+}
+
+.email-subscription__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 561px;
+  height: 130px;
+  justify-content: center;
+  padding-top: 40px;
+}
+
+.email-subscription__description {
+  width: 493px;
+  height: 40px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.4px;
+  color: #7D7D7D;
+  margin-top: 20px;
+}
+
+.email-subscription__description a {
+  width: 493px;
+  height: 40px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.4px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.email-subscription__wrapper-window {
+  display: flex;
+  color: #FFFFFF;
+  width: 493px;
+  padding-bottom: 20px;
+  vertical-align: middle;
+  align-items: center;
+  grid-gap: 10px;
+  border-bottom: 1px solid #FFFFFF;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: -0.8px;
+}
+
+.email-subscription__wrapper-input{
+  width: 366px;
+  background-color: #000000;
+  border: 0;
+  color: #FFFFFF;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: -0.8px;
+}
+
+.button-submit {
+  background-color: #000000;
+  padding: 0;
+  border: 0; 
+}
+
+/*Ответы на вопросы*/
+
+.answers_list {
+  display: flex;
+  flex-direction: column;
+}
+
+.answers_list-questions {
+  display: flex;
+  height: 120px;
+  vertical-align: middle;
+  align-items: center;
+  border-bottom: 1px solid #C0C0C0;
+}
+
+.answers_list-questions:first-child{
+  border-top: 1px solid #C0C0C0;
+}
+
+.question {
+  width: 1328px;
+  height: 40px;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 40px;
+  letter-spacing: -1.6px;
+}
+
+.response-btn {
+  border: 0;
+  padding: 0;
+  background-color: #FFFFFF;
+}
+
+/*footer*/
+
+.footer__conteiner {
+  display: flex;
+  max-width: 1440px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #000000;
+  height: 130px;
+  vertical-align: middle;
+  align-items: center;
+  padding: 30px;
+}
+
+.footer__nav-list {
+  display: flex;
+  height: 120px;
+  vertical-align: middle;
+  align-items: center;
+  grid-gap: 32px;
+  padding-right: 746px;
+}
+
+.footer__nav-item {
+  height: 20px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.4px;
+}
+
+.footer__nav-link {
+  text-decoration: none;
+  color: #7D7D7D;
+}
+
+
 }
